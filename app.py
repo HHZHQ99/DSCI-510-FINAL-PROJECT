@@ -342,7 +342,7 @@ def app_page():
     with tab3:
         st.title('Charts')
 
-        image_path = "images/Time Series Plot of Gold and SP500 Price.png"
+        image_path = "Time Series Plot of Gold and SP500 Price.png"
         st.image(image_path, width=None, caption="Gold Price vs SP500 Price")
         st.markdown("""The line graph provides illustration of the price trends of Gold and the S&P 500 over 
         approximately two decades, starting from around 2001 up to 2019. During certain periods such as the financial 
@@ -354,7 +354,7 @@ def app_page():
         global economic conditions. """)
         st.markdown("""""")
 
-        image_path = "images/scatterplotsp500vs10.png"
+        image_path = "scatterplotsp500vs10.png"
         st.image(image_path, width=None, caption="SP500 Price vs 10 Year Treasury Note")
         st.markdown("""The scatter plot displaying the relationship between the S&P 500 Price and the 10-Year 
         Treasury Note Yield reveals distinct clusters indicating varying economic conditions. No clear linear 
@@ -366,7 +366,7 @@ def app_page():
         bond yields as indicators of investor sentiment and broader economic trends.""")
         st.markdown("""""")
 
-        image_path = "images/scatterplotsp500vsg.png"
+        image_path = "scatterplotsp500vsg.png"
         st.image(image_path, width=None, caption="SP500 Price vs Gold Price")
         st.markdown("""The scatter plot illustrating the relationship between the S&P 500 Price and Gold Price shows 
         a varied pattern without a straightforward linear correlation. Notably, the data points form distinct 
@@ -379,7 +379,7 @@ def app_page():
         economic indicators during different periods.""")
         st.markdown("""""")
 
-        image_path = "images/scatterplotgvs10.png"
+        image_path = "scatterplotgvs10.png"
         st.image(image_path, width=None, caption="Gold Price vs 10 Year T Note")
         st.markdown("""The scatter plot comparing Gold Price and the 10-Year Treasury Note Yield showcases an inverse 
         relationship, highlighted by clusters that suggest varying economic conditions. One notable cluster shows 
