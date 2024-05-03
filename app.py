@@ -28,7 +28,7 @@ def main_page():
         - Project Reflections: Display additional questions from 4-8 with answers. 
         - Data Sources: Descriptions of all data sources used by this webapp, with url and apis respectively. Additionally, 
         a paragraph describing the final parquet file is included as well. 
-        - Interactive Data / Analysis / Charts: This page has three tabs on the top, allowing user to navigate to interactive
+        - Interactive Data / Analysis / Charts: This page has three tabs as side bar on the left, allowing user to navigate to interactive
          data plots, project analysis, and charts. The interactive data tab allow user to utilize the sidebar on the left
          to select data that they are interested in. The analysis tab has the research plan, methods, and results of the 
          project. And finally, the charts tab shows additional line graph and scatter plots to visualize the data.""")
@@ -60,7 +60,7 @@ def main_page():
     others over an extended period. Sad :(
 
 
-    <<<< Full plots/charts, analysis and conclusions are on the last page, note the last page have three tabs at the top! 
+    <<<< Full plots/charts, analysis and conclusions are in last pages' tabs
 
     """)
 
