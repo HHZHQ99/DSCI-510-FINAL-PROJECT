@@ -5,7 +5,7 @@ import pyarrow.parquet as pq
 
 
 # Data loading and caching
-@st.cache_data
+@st.cache
 def load_data():
     data = pd.read_parquet('final_data.parquet')
     data['Date'] = pd.to_datetime(data['Date'])
