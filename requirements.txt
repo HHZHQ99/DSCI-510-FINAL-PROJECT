@@ -22,6 +22,7 @@ MarkupSafe
 mdurl
 multitasking
 numpy
+plotly
 packaging
 pandas
 peewee
