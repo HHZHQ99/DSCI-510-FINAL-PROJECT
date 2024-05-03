@@ -197,8 +197,10 @@ def data_source_page():
 
 def app_page():
     # set up three tabs
-    tab1, tab2, tab3 = st.tabs(["Interactive Data", "Analysis", "Charts"])
-    with tab1:
+    # Create a sidebar radio button to select the tab
+    selected_tab = st.sidebar.radio("Select Tab", ["Interactive Data", "Analysis", "Charts"])
+
+    if selected_tab == "Interactive Data":
         st.title('Interactive Data')
         data = load_data()
         # set up date for selection
@@ -241,7 +243,7 @@ def app_page():
         fig = px.line(filtered_data, x='Date', y=selected_column, title=f'{selected_column} Trend')
         st.plotly_chart(fig)
 
-    with tab2:
+    elif selected_tab == "Analysis":
         st.markdown(""" 
         ## Analysis
 
@@ -339,7 +341,7 @@ def app_page():
 
         """)
 
-    with tab3:
+    elif selected_tab == "Charts":
         st.title('Charts')
 
         image_path = "Time Series Plot of Gold and SP500 Price.png"
